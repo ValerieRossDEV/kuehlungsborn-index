@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kühlungsborn heute</title>
+
+    <style>
+        :root {
+            --paper: #f3f1eb;
+            --ink: #161b22;
+            --grid: #8a8f95;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: var(--paper);
+            color: var(--ink);
+        }
+
+        main {
+            width: min(1180px, calc(100% - 24px));
+            margin: 0 auto;
+            padding: 24px 0 48px;
+        }
+
+        .top-line {
+            height: 4px;
+            background: var(--ink);
+        }
+
+        header {
+            padding: 20px 0 10px;
+        }
+
+        .title {
+            font-weight: 800;
+            font-size: clamp(2rem, 6vw, 3.4rem);
+            letter-spacing: .03em;
+        }
+
+        .dotted {
+            border-top: 2px dotted var(--ink);
+            margin: 18px 0 26px;
+        }
+
+        .intro {
+            max-width: 58ch;
+            line-height: 1.55;
+        }
+
+        .hero {
+            margin-bottom: 36px;
+        }
+
+        .card {
+            border: 1px solid var(--grid);
+            background: rgba(255,255,255,.28);
+        }
+
+        .card img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .meta {
+            padding: 14px 16px;
+            border-top: 1px solid var(--grid);
+            font-weight: 700;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(
+                auto-fit,
+                minmax(260px, 1fr)
+            );
+            gap: 18px;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding-top: 18px;
+            border-top: 1px solid var(--grid);
+            line-height: 1.6;
+            font-size: .9rem;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<main>
+    <div class="top-line"></div>
+
+    <header>
+        <div class="title">
+            KÜHLUNGSBORN HEUTE
+        </div>
+
+        <div class="dotted"></div>
+
+        <p class="intro">
+            Tägliche generative Wettergrafik aus Kühlungsborn.
+            Wetterdaten: Open-Meteo. Meeresdaten: Open-Meteo.
+            WELLE MAX bezeichnet das Tagesmaximum der signifikanten Wellenhöhe.
+            Das Möwenrisiko™ ist wissenschaftlich vollkommen unbelegt.
+        </p>
+    </header>
+
+    
+    <section class="hero">
+        <a
+            class="card"
+            href="archive/2026-08-23.png"
+        >
+            <img
+                src="archive/2026-08-23.png"
+                alt="Kühlungsborn heute 23.08.2026"
+            >
+            <div class="meta">
+                NEUESTE AUSGABE / 23.08.2026
+            </div>
+        </a>
+    </section>
+    
+
+    <section class="grid">
+        
+        <a
+            class="card"
+            href="archive/2026-08-23.png"
+        >
+            <img
+                src="archive/2026-08-23.png"
+                alt="Kühlungsborn heute 23.08.2026"
+                loading="lazy"
+            >
+            <div class="meta">
+                23.08.2026
+            </div>
+        </a>
+        
+    </section>
+
+    <footer>
+        DATA / OPEN-METEO<br>
+        MÖWENRISIKO™: WISSENSCHAFTLICH VOLLKOMMEN UNBELEGT.
+    </footer>
+</main>
+
+</body>
+</html>
