@@ -2,6 +2,8 @@
 
 Tägliche generative Wettergrafik für Kühlungsborn.
 
+Nachsehen unter dem Ordner docs/archive.
+
 ## Enthalten
 
 - Python
