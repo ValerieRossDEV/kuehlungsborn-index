@@ -1,10 +1,10 @@
 # Kühlungsborn heute
 
-Tägliche generative Wettergrafik für Kühlungsborn.
+Tägliche Wettergrafik mit Möwenrisiko für Kühlungsborn.
 
-Nachsehen unter dem Ordner docs/archive.
+Index nachzusehen unter dem Ordner docs/archive.
 
-## Enthalten
+## I'm Projekt enthalten
 
 - Python
 - Pydantic
