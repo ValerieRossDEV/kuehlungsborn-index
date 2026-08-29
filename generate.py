@@ -17,12 +17,6 @@ ROOT = Path(__file__).parent
 DOCS = ROOT / "docs"
 ARCHIVE = DOCS / "archive"
 
-TARGET_HOUR = int(
-    os.getenv(
-        "TARGET_HOUR",
-        "7",
-    )
-)
 
 FORCE = (
     os.getenv(
@@ -46,17 +40,6 @@ def main() -> None:
         ARCHIVE
         / f"{today}.png"
     )
-
-    if (
-        not FORCE
-        and now.hour != TARGET_HOUR
-    ):
-        print(
-            "Skipping: "
-            f"{now.hour:02d}:xx in {TIMEZONE}; "
-            f"target hour is {TARGET_HOUR:02d}:xx."
-        )
-        return
 
     if output.exists() and not FORCE:
         print(
