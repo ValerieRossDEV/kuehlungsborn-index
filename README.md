@@ -37,8 +37,10 @@ Im Render stehen nur:
 
 ## Lokal
 
+Benötigt min. Python 3.10.
+
 ```bash
-python -m venv .venv
+python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 FORCE=1 python generate.py
@@ -47,7 +49,7 @@ FORCE=1 python generate.py
 Windows PowerShell:
 
 ```powershell
-python -m venv .venv
+python3 -m venv .venv
 .venv\Scripts\Activate.ps1
 pip install -r requirements.txt
 $env:FORCE="1"
